@@ -32,8 +32,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COLS 7
 
 // wiring of each half
-#define MATRIX_ROW_PINS { D4, D7, E6, B4, B5 }
-#define MATRIX_COL_PINS { F5, F6, F7, B1, B3, B2, B6 }
+#define MATRIX_ROW_PINS { C6, D7, E6, B5, B4 }          //This from my config
+#define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6, F5 }  //This from my config
+//#define MATRIX_ROW_PINS { D4, D7, E6, B4, B5 }
+//#define MATRIX_COL_PINS { F5, F6, F7, B1, B3, B2, B6 }
 // #define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6, F5} //uncomment this line and comment line above if you need to reverse left-to-right key order
 
 /* COL2ROW or ROW2COL */
@@ -57,9 +59,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LOCKING_RESYNC_ENABLE
 
 /* ws2812 RGB LED */
-#define RGB_DI_PIN D3
-
-#define RGBLED_NUM 14    // Number of LEDs
+#define RGB_DI_PIN F4   //This from my config
+#define RGBLED_NUM 16   //This from my config
+//#define RGB_DI_PIN D3
+//#define RGBLED_NUM 14    // Number of LEDs
 
 #define RGBLIGHT_SPLIT   // sync LEDs between RIGHT and LEFT hand
 

@@ -17,10 +17,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-// wiring of each half
-#define MATRIX_ROW_PINS { C6, D7, E6, B5, B4 }
-#define MATRIX_COL_PINS { B6, B2, B3, B1, F7, F6, F5 }
-
 /* Use I2C or Serial, not both */
 #define USE_SERIAL
 // #define USE_I2C
@@ -30,8 +26,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define MASTER_RIGHT
 // #define EE_HANDS
 
-/* Other Configuration Settings */
+/* Mod Tap Configuration Settings */
 #define TAPPING_TERM 200  // Default is 200*******ADJUST AS NEEDED
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_TERM_PER_KEY
+#define TAP_CODE_DELAY 60
+//#define RETRO_TAPPING
+
+/* Other Configuration Settings */
+#define COMBO_COUNT 3
 
 /* Other Settings to disable to save space */
 #define LAYER_STATE_8BIT // I am using less than 8 layers
@@ -41,9 +44,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NO_ACTION_ONESHOT // I am not using this right now so I will disable it for now
 
 /* All LED Settings */
-#define RGB_DI_PIN F4
-#define RGBLED_NUM 16
-
 //#define RGBLIGHT_SPLIT   // sync LEDs between RIGHT and LEFT hand
 //#define RGBLED_SPLIT { 16, 16 }
 
